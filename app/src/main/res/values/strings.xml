@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Minesweeper Alpha</string>
+    <string-array name="difficulties_array">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Custom</item>
+    </string-array>
+    <string name="settings">Settings</string>
+    <string name="game">Game</string>
+    <string name="difficulty">Difficulty</string>
+
+    <string name="beginner">Beginner 9x9, 10 mines</string>
+    <string name="intermediate">Intermediate 16x16, 40 mines</string>
+    <string name="advanced">Advanced 30x16, 99 mines</string>
+
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="mines">Mines</string>
+
 </resources>

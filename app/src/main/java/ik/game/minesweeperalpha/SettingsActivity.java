@@ -7,8 +7,9 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
 
 
 import com.example.minesweeperalpha.R;
@@ -53,6 +54,16 @@ public class SettingsActivity extends AppCompatActivity {
         ActionBar settingsActionBar = getSupportActionBar();
         settingsActionBar.setDisplayShowTitleEnabled(false);
         settingsActionBar.setDisplayHomeAsUpEnabled(true);
+
+        Spinner difficultySpinner = (Spinner) findViewById(R.id.difficulty_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.difficulties_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        difficultySpinner.setAdapter(adapter);
+
+        EditText etWidth = (EditText) findViewById(R.id.etWidth);
+        EditText etHeight = (EditText) findViewById(R.id.etHeight);
+        EditText etMines = (EditText) findViewById(R.id.etMines);
 
         /*Button saveButton = (Button) findViewById();
         Button cancelButton = (Button) findViewById();
