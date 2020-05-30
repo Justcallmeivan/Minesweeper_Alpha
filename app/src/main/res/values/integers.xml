@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="beginner_width">9</integer>
+    <integer name="beginner_height">9</integer>
+    <integer name="beginner_mines">10</integer>
+
+    <integer name="intermediate_width">16</integer>
+    <integer name="intermediate_height">16</integer>
+    <integer name="intermediate_mines">40</integer>
+
+    <integer name="advanced_width">16</integer>
+    <integer name="advanced_height">30</integer>
+    <integer name="advanced_mines">99</integer>
+
+    <integer name="default_custom_width">16</integer>
+    <integer name="default_custom_height">30</integer>
+    <integer name="default_custom_mines">99</integer>
+</resources>
